@@ -1,4 +1,4 @@
--- 装备表
+-- 装备表 初级设计1.0
 CREATE TABLE equip_info (
     item_id VARCHAR(64) PRIMARY KEY,     -- 专用的物品ID作为主键
     name VARCHAR(128) NOT NULL,           -- 装备名称，长度 128 足够 eg.
@@ -13,6 +13,7 @@ CREATE TABLE equip_info (
 CREATE INDEX idx_name ON equip_info(name);
 CREATE INDEX idx_item_id ON equip_info(item_id);
 
+--装备内具体细节信息
 CREATE TABLE equip_subclass(
     item_id VARCHAR(64) PRIMARY KEY,     --主键
     green_font VARCHAR(128),             --绿字属性

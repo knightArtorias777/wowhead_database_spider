@@ -1,4 +1,4 @@
-from drission import DrissionPage
+import DrissionPage
 #todo 爬取职业需求的装备信息 装等是639 效果最好的
 
 # 初始化一个 DrissionPage 对象，并使用浏览器模式
