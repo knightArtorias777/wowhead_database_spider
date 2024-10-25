@@ -41,7 +41,6 @@ def mythic_itemUrl_spider(url):
     #dom加载完就可以分析 好模式
     page.set.load_mode.eager()
     page.get(url)
-    # slowly reason, todo:优化成边加载变输出好了 或者开代理
     #print(page.raw_data)
     load_chrome_time = time.time()
     print(f"loading time:{load_chrome_time- start_time}")
