@@ -1,7 +1,7 @@
 import pandas as pd
 from io import StringIO
 
-from spider import bis_url_spider
+from src.spider.spider import bis_url_spider
 """
 数据处理 从list到最后的输出
 """

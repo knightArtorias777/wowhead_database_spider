@@ -1,6 +1,4 @@
-import requests
-from bs4 import BeautifulSoup
-from dict_classes import classes
+from src.spider.dict_classes import classes
 """
 获取url地址
 """
