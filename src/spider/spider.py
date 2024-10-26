@@ -36,19 +36,19 @@ def bis_url_spider(url)->list:
 # 尝试使用所有元素加正则表达式筛选所有装备
 def mythic_itemUrl_spider(url):
     # time too slowly ,know where are problem
-    start_time = time.time()
+    # 创建一个好爬手
     page = WebPage('d')
     #dom加载完就可以分析 好模式
     page.set.load_mode.eager()
     page.get(url)
-    #print(page.raw_data)
-    load_chrome_time = time.time()
-    print(f"loading time:{load_chrome_time- start_time}")
+
+    #print(page.raw_data) 提取有用信息
     lst:list = extract_content(page.raw_data)
-    retime = time.time()
+
+    #输出
     print(lst)
     print(len(lst))
-    print(f"regixtime:{retime - load_chrome_time}")
+
     #doit (?<=<span class="q4">)(.*?)(?=</span>)
 
     # links = tab.eles('@@tag()=div@@id=tab-bis-items-mythic@@td')
